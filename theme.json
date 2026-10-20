@@ -1,6 +1,3 @@
-Here is another step up in brightness, shifting the canvas to a rich, warm dark-chocolate and espresso leather tone (`#423328`) with clearer contrast between roads, urban districts, and water while retaining the dark-mode antiquarian feel:
-
-```json
 {
   "version": 8,
   "sources": {
@@ -540,5 +537,3 @@ Here is another step up in brightness, shifting the canvas to a rich, warm dark-
     }
   ]
 }
-
-```
