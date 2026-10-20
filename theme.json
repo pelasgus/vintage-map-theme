@@ -1,3 +1,6 @@
+Here is another step up in brightness, shifting the canvas to a rich, warm dark-chocolate and espresso leather tone (`#423328`) with clearer contrast between roads, urban districts, and water while retaining the dark-mode antiquarian feel:
+
+```json
 {
   "version": 8,
   "sources": {
@@ -21,7 +24,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#574435"
+        "background-color": "#423328"
       }
     },
     {
@@ -42,7 +45,7 @@
       ],
       "paint": {
         "fill-antialias": false,
-        "fill-color": "#31494A"
+        "fill-color": "#243536"
       }
     },
     {
@@ -63,7 +66,7 @@
         ["==", ["get", "subclass"], "ice_shelf"]
       ],
       "paint": {
-        "fill-color": "#574435",
+        "fill-color": "#423328",
         "fill-opacity": 0.7
       }
     },
@@ -85,7 +88,7 @@
         ["==", ["get", "subclass"], "glacier"]
       ],
       "paint": {
-        "fill-color": "#4D3B2C",
+        "fill-color": "#3B2C21",
         "fill-opacity": [
           "interpolate",
           ["linear"],
@@ -114,7 +117,7 @@
         ["==", ["get", "class"], "residential"]
       ],
       "paint": {
-        "fill-color": "#614D3D",
+        "fill-color": "#4A3B2F",
         "fill-opacity": 0.85
       }
     },
@@ -135,7 +138,7 @@
         ["==", ["get", "class"], "wood"]
       ],
       "paint": {
-        "fill-color": "#43563C",
+        "fill-color": "#33412E",
         "fill-opacity": 0.65
       }
     },
@@ -156,7 +159,7 @@
         ["==", ["get", "class"], "park"]
       ],
       "paint": {
-        "fill-color": "#43563C",
+        "fill-color": "#33412E",
         "fill-opacity": 0.75
       }
     },
@@ -173,7 +176,7 @@
         false
       ],
       "paint": {
-        "line-color": "#31494A",
+        "line-color": "#243536",
         "line-width": 1.5
       }
     },
@@ -192,8 +195,8 @@
       ],
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#6E5440",
-        "fill-outline-color": "#3B2A1E"
+        "fill-color": "#544030",
+        "fill-outline-color": "#2C1F15"
       }
     },
     {
@@ -224,7 +227,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#8F4944",
+        "line-color": "#703834",
         "line-dasharray": [1.5, 1.5],
         "line-opacity": 0.75,
         "line-width": [
@@ -268,7 +271,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#8F4944",
+        "line-color": "#703834",
         "line-opacity": 0.85,
         "line-width": [
           "interpolate",
@@ -310,7 +313,7 @@
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#947055",
+        "line-color": "#755742",
         "line-width": [
           "interpolate",
           ["exponential", 1.3],
@@ -351,7 +354,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#8F4944",
+        "line-color": "#703834",
         "line-width": [
           "interpolate",
           ["exponential", 1.3],
@@ -386,7 +389,7 @@
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#947055",
+        "line-color": "#755742",
         "line-width": [
           "interpolate",
           ["exponential", 1.4],
@@ -421,7 +424,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#8F4944",
+        "line-color": "#703834",
         "line-width": [
           "interpolate",
           ["exponential", 1.4],
@@ -455,7 +458,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#2C211A",
+        "line-color": "#211912",
         "line-width": [
           "interpolate",
           ["exponential", 1.3],
@@ -489,7 +492,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#574435",
+        "line-color": "#423328",
         "line-dasharray": [3, 3],
         "line-width": [
           "interpolate",
@@ -515,7 +518,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#2C211A",
+        "line-color": "#211912",
         "line-width": 1.8
       }
     },
@@ -537,3 +540,5 @@
     }
   ]
 }
+
+```
