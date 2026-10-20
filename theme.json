@@ -21,7 +21,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#1E1712"
+        "background-color": "#4A392C"
       }
     },
     {
@@ -42,7 +42,7 @@
       ],
       "paint": {
         "fill-antialias": false,
-        "fill-color": "#121A1B"
+        "fill-color": "#2E4648"
       }
     },
     {
@@ -63,7 +63,7 @@
         ["==", ["get", "subclass"], "ice_shelf"]
       ],
       "paint": {
-        "fill-color": "#1E1712",
+        "fill-color": "#4A392C",
         "fill-opacity": 0.7
       }
     },
@@ -85,7 +85,7 @@
         ["==", ["get", "subclass"], "glacier"]
       ],
       "paint": {
-        "fill-color": "#1A1410",
+        "fill-color": "#403024",
         "fill-opacity": [
           "interpolate",
           ["linear"],
@@ -114,7 +114,7 @@
         ["==", ["get", "class"], "residential"]
       ],
       "paint": {
-        "fill-color": "#231C16",
+        "fill-color": "#544335",
         "fill-opacity": 0.85
       }
     },
@@ -135,8 +135,8 @@
         ["==", ["get", "class"], "wood"]
       ],
       "paint": {
-        "fill-color": "#1B2117",
-        "fill-opacity": 0.6
+        "fill-color": "#3B4E35",
+        "fill-opacity": 0.65
       }
     },
     {
@@ -156,8 +156,8 @@
         ["==", ["get", "class"], "park"]
       ],
       "paint": {
-        "fill-color": "#1B2117",
-        "fill-opacity": 0.7
+        "fill-color": "#3B4E35",
+        "fill-opacity": 0.75
       }
     },
     {
@@ -173,7 +173,7 @@
         false
       ],
       "paint": {
-        "line-color": "#121A1B",
+        "line-color": "#2E4648",
         "line-width": 1.5
       }
     },
@@ -192,8 +192,8 @@
       ],
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#291F17",
-        "fill-outline-color": "#150E09"
+        "fill-color": "#634D3A",
+        "fill-outline-color": "#36271C"
       }
     },
     {
@@ -224,9 +224,9 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#3A1C1A",
+        "line-color": "#8C3E3A",
         "line-dasharray": [1.5, 1.5],
-        "line-opacity": 0.75,
+        "line-opacity": 0.85,
         "line-width": [
           "interpolate",
           ["exponential", 1.2],
@@ -268,8 +268,8 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#3A1C1A",
-        "line-opacity": 0.85,
+        "line-color": "#8C3E3A",
+        "line-opacity": 0.9,
         "line-width": [
           "interpolate",
           ["exponential", 1.4],
@@ -310,7 +310,7 @@
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#422D1F",
+        "line-color": "#9E7859",
         "line-width": [
           "interpolate",
           ["exponential", 1.3],
@@ -351,7 +351,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#3A1C1A",
+        "line-color": "#8C3E3A",
         "line-width": [
           "interpolate",
           ["exponential", 1.3],
@@ -386,7 +386,7 @@
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#422D1F",
+        "line-color": "#9E7859",
         "line-width": [
           "interpolate",
           ["exponential", 1.4],
@@ -421,7 +421,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#3A1C1A",
+        "line-color": "#8C3E3A",
         "line-width": [
           "interpolate",
           ["exponential", 1.4],
@@ -455,7 +455,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#0E0A07",
+        "line-color": "#241A12",
         "line-width": [
           "interpolate",
           ["exponential", 1.3],
@@ -489,7 +489,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#1E1712",
+        "line-color": "#4A392C",
         "line-dasharray": [3, 3],
         "line-width": [
           "interpolate",
@@ -515,7 +515,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#0E0A07",
+        "line-color": "#241A12",
         "line-width": 1.8
       }
     }
