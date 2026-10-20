@@ -1,3 +1,6 @@
+Here is your MapLibre vector style specification updated with a deep, dark-mode sepia palette. The terrain background is shifted to a rich, dark roasted espresso/parchment tone (`#1E1712`), water features take on a deep midnight ink tint (`#121A1B`), roads and boundaries use subtle iron-gall sepia accents (`#3A1C1A`, `#422D1F`), and buildings adopt an understated dark umber (`#291F17`):
+
+```json
 {
   "version": 8,
   "sources": {
@@ -21,7 +24,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#423328"
+        "background-color": "#1E1712"
       }
     },
     {
@@ -42,7 +45,7 @@
       ],
       "paint": {
         "fill-antialias": false,
-        "fill-color": "#243536"
+        "fill-color": "#121A1B"
       }
     },
     {
@@ -63,7 +66,7 @@
         ["==", ["get", "subclass"], "ice_shelf"]
       ],
       "paint": {
-        "fill-color": "#423328",
+        "fill-color": "#1E1712",
         "fill-opacity": 0.7
       }
     },
@@ -85,7 +88,7 @@
         ["==", ["get", "subclass"], "glacier"]
       ],
       "paint": {
-        "fill-color": "#3B2C21",
+        "fill-color": "#1A1410",
         "fill-opacity": [
           "interpolate",
           ["linear"],
@@ -114,7 +117,7 @@
         ["==", ["get", "class"], "residential"]
       ],
       "paint": {
-        "fill-color": "#4A3B2F",
+        "fill-color": "#231C16",
         "fill-opacity": 0.85
       }
     },
@@ -135,8 +138,8 @@
         ["==", ["get", "class"], "wood"]
       ],
       "paint": {
-        "fill-color": "#33412E",
-        "fill-opacity": 0.65
+        "fill-color": "#1B2117",
+        "fill-opacity": 0.6
       }
     },
     {
@@ -156,8 +159,8 @@
         ["==", ["get", "class"], "park"]
       ],
       "paint": {
-        "fill-color": "#33412E",
-        "fill-opacity": 0.75
+        "fill-color": "#1B2117",
+        "fill-opacity": 0.7
       }
     },
     {
@@ -173,7 +176,7 @@
         false
       ],
       "paint": {
-        "line-color": "#243536",
+        "line-color": "#121A1B",
         "line-width": 1.5
       }
     },
@@ -192,8 +195,8 @@
       ],
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#544030",
-        "fill-outline-color": "#2C1F15"
+        "fill-color": "#291F17",
+        "fill-outline-color": "#150E09"
       }
     },
     {
@@ -224,7 +227,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#703834",
+        "line-color": "#3A1C1A",
         "line-dasharray": [1.5, 1.5],
         "line-opacity": 0.75,
         "line-width": [
@@ -268,7 +271,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#703834",
+        "line-color": "#3A1C1A",
         "line-opacity": 0.85,
         "line-width": [
           "interpolate",
@@ -310,7 +313,7 @@
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#755742",
+        "line-color": "#422D1F",
         "line-width": [
           "interpolate",
           ["exponential", 1.3],
@@ -351,7 +354,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#703834",
+        "line-color": "#3A1C1A",
         "line-width": [
           "interpolate",
           ["exponential", 1.3],
@@ -386,7 +389,7 @@
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#755742",
+        "line-color": "#422D1F",
         "line-width": [
           "interpolate",
           ["exponential", 1.4],
@@ -421,7 +424,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#703834",
+        "line-color": "#3A1C1A",
         "line-width": [
           "interpolate",
           ["exponential", 1.4],
@@ -455,7 +458,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#211912",
+        "line-color": "#0E0A07",
         "line-width": [
           "interpolate",
           ["exponential", 1.3],
@@ -489,7 +492,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#423328",
+        "line-color": "#1E1712",
         "line-dasharray": [3, 3],
         "line-width": [
           "interpolate",
@@ -515,7 +518,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#211912",
+        "line-color": "#0E0A07",
         "line-width": 1.8
       }
     },
@@ -537,3 +540,5 @@
     }
   ]
 }
+
+```
