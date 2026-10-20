@@ -1,6 +1,3 @@
-Here is your MapLibre vector style specification updated with a deep, dark-mode sepia palette. The terrain background is shifted to a rich, dark roasted espresso/parchment tone (`#1E1712`), water features take on a deep midnight ink tint (`#121A1B`), roads and boundaries use subtle iron-gall sepia accents (`#3A1C1A`, `#422D1F`), and buildings adopt an understated dark umber (`#291F17`):
-
-```json
 {
   "version": 8,
   "sources": {
@@ -540,5 +537,3 @@ Here is your MapLibre vector style specification updated with a deep, dark-mode 
     }
   ]
 }
-
-```
