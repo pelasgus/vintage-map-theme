@@ -123,7 +123,7 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "landcover",
-      "filter": [
+-     "filter": [
         "all",
         [
           "match",
@@ -293,7 +293,7 @@
         [
           "match",
           ["geometry-type"],
-          ["LineString", "MultiLineString"],
+          ["MultiPolygon", "Polygon"],
           true,
           false
         ],
