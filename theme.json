@@ -42,7 +42,29 @@
       ],
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#bcc7b7",
+        "fill-color": "#bcc7b7"
+      }
+    },
+    {
+      "id": "water_hachure_overlay",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "filter": [
+        "all",
+        [
+          "match",
+          ["geometry-type"],
+          ["MultiPolygon", "Polygon"],
+          true,
+          false
+        ],
+        ["!=", ["get", "brunnel"], "tunnel"]
+      ],
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "#feedc3",
+        "fill-opacity": 0.35,
         "fill-pattern": "water-hachure-pattern"
       }
     },
