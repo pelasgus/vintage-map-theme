@@ -14,7 +14,7 @@
       "url": "https://tiles.openfreemap.org/planet"
     }
   },
-  "sprite": "https://tiles.openfreemap.org/sprites/ofm_f384/ofm",
+  "sprite": "https://raw.githubusercontent.com/pelasgus/map-hatching/refs/heads/main/hatching.svg",
   "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
