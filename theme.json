@@ -42,30 +42,62 @@
       ],
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#bcc7b7"
+        "fill-color": "#f4ebd0",
+        "fill-opacity": 0.5
       }
     },
     {
-      "id": "water_hachure_overlay",
-      "type": "fill",
+      "id": "water_hachure_outer_3",
+      "type": "line",
       "source": "openmaptiles",
       "source-layer": "water",
       "filter": [
         "all",
-        [
-          "match",
-          ["geometry-type"],
-          ["MultiPolygon", "Polygon"],
-          true,
-          false
-        ],
+        ["match", ["geometry-type"], ["MultiPolygon", "Polygon"], true, false],
         ["!=", ["get", "brunnel"], "tunnel"]
       ],
+      "layout": { "line-cap": "butt", "line-join": "miter" },
       "paint": {
-        "fill-antialias": true,
-        "fill-color": "#feedc3",
-        "fill-opacity": 0.35,
-        "fill-pattern": "water-hachure-pattern"
+        "line-color": "#8b7d6b",
+        "line-dasharray": [1, 6],
+        "line-width": 6.0,
+        "line-opacity": 0.2
+      }
+    },
+    {
+      "id": "water_hachure_outer_2",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "filter": [
+        "all",
+        ["match", ["geometry-type"], ["MultiPolygon", "Polygon"], true, false],
+        ["!=", ["get", "brunnel"], "tunnel"]
+      ],
+      "layout": { "line-cap": "butt", "line-join": "miter" },
+      "paint": {
+        "line-color": "#8b7d6b",
+        "line-dasharray": [1, 4],
+        "line-width": 4.0,
+        "line-opacity": 0.35
+      }
+    },
+    {
+      "id": "water_hachure_outer_1",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "filter": [
+        "all",
+        ["match", ["geometry-type"], ["MultiPolygon", "Polygon"], true, false],
+        ["!=", ["get", "brunnel"], "tunnel"]
+      ],
+      "layout": { "line-cap": "butt", "line-join": "miter" },
+      "paint": {
+        "line-color": "#8b7d6b",
+        "line-dasharray": [1, 2],
+        "line-width": 2.0,
+        "line-opacity": 0.5
       }
     },
     {
@@ -89,9 +121,9 @@
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#bcc7b7",
-        "line-width": 1.2,
-        "line-opacity": 0.95
+        "line-color": "#5a4f3f",
+        "line-width": 1.0,
+        "line-opacity": 0.85
       }
     },
     {
@@ -226,15 +258,46 @@
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#bcc7b7",
+        "line-color": "#5a4f3f",
         "line-width": [
           "interpolate",
           ["linear"],
           ["zoom"],
           8,
-          0.8,
+          0.7,
           14,
-          2.2
+          1.8
+        ]
+      }
+    },
+    {
+      "id": "waterway_hand_drawn",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "waterway",
+      "filter": [
+        "match",
+        ["geometry-type"],
+        ["LineString", "MultiLineString"],
+        true,
+        false
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "#8b7d6b",
+        "line-dasharray": [1, 2.5],
+        "line-opacity": 0.6,
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          8,
+          1.2,
+          14,
+          2.8
         ]
       }
     },
