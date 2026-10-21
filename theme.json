@@ -497,7 +497,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#76876c",
+        "line-pattern": "hatch",
         "line-opacity": 0.95,
         "line-width": [
           "interpolate",
@@ -527,8 +527,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#76876c",
-        "line-dasharray": [1.5, 2.0],
+        "line-pattern": "hatch",
         "line-opacity": 0.75,
         "line-width": [
           "interpolate",
