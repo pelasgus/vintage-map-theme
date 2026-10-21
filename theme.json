@@ -522,7 +522,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#FFF1CC",
+        "line-color": "#ebd4a2",
         "line-dasharray": [2, 3],
         "line-width": [
           "interpolate",
