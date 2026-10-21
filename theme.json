@@ -47,6 +47,27 @@
       }
     },
     {
+      "id": "water_hatch",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "filter": [
+        "all",
+        [
+          "match",
+          ["geometry-type"],
+          ["MultiPolygon", "Polygon"],
+          true,
+          false
+        ],
+        ["!=", ["get", "brunnel"], "tunnel"]
+      ],
+      "paint": {
+        "fill-pattern": "hatch",
+        "fill-opacity": 0.35
+      }
+    },
+    {
       "id": "water_coastline_ring_5",
       "type": "line",
       "source": "openmaptiles",
