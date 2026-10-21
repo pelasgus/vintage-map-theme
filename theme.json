@@ -42,88 +42,8 @@
       ],
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#bcc7b7"
-      }
-    },
-    {
-      "id": "water_coastline_hand_2",
-      "type": "line",
-      "source": "openmaptiles",
-      "source-layer": "water",
-      "filter": [
-        "all",
-        [
-          "match",
-          ["geometry-type"],
-          ["MultiPolygon", "Polygon"],
-          true,
-          false
-        ],
-        ["!=", ["get", "brunnel"], "tunnel"]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#bcc7b7",
-        "line-dasharray": [2, 5],
-        "line-width": 4.5,
-        "line-opacity": 0.25
-      }
-    },
-    {
-      "id": "water_coastline_outer",
-      "type": "line",
-      "source": "openmaptiles",
-      "source-layer": "water",
-      "filter": [
-        "all",
-        [
-          "match",
-          ["geometry-type"],
-          ["MultiPolygon", "Polygon"],
-          true,
-          false
-        ],
-        ["!=", ["get", "brunnel"], "tunnel"]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#bcc7b7",
-        "line-dasharray": [1, 3],
-        "line-width": 2.5,
-        "line-opacity": 0.45
-      }
-    },
-    {
-      "id": "water_coastline_hand_1",
-      "type": "line",
-      "source": "openmaptiles",
-      "source-layer": "water",
-      "filter": [
-        "all",
-        [
-          "match",
-          ["geometry-type"],
-          ["MultiPolygon", "Polygon"],
-          true,
-          false
-        ],
-        ["!=", ["get", "brunnel"], "tunnel"]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#bcc7b7",
-        "line-dasharray": [1, 2],
-        "line-width": 1.4,
-        "line-opacity": 0.65
+        "fill-color": "#bcc7b7",
+        "fill-pattern": "water-hachure-pattern"
       }
     },
     {
@@ -148,8 +68,8 @@
       },
       "paint": {
         "line-color": "#bcc7b7",
-        "line-width": 0.8,
-        "line-opacity": 0.9
+        "line-width": 1.2,
+        "line-opacity": 0.95
       }
     },
     {
@@ -290,40 +210,9 @@
           ["linear"],
           ["zoom"],
           8,
-          0.7,
+          0.8,
           14,
-          1.8
-        ]
-      }
-    },
-    {
-      "id": "waterway_hand_drawn",
-      "type": "line",
-      "source": "openmaptiles",
-      "source-layer": "waterway",
-      "filter": [
-        "match",
-        ["geometry-type"],
-        ["LineString", "MultiLineString"],
-        true,
-        false
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#bcc7b7",
-        "line-dasharray": [1, 2.5],
-        "line-opacity": 0.6,
-        "line-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          8,
-          1.2,
-          14,
-          2.8
+          2.2
         ]
       }
     },
